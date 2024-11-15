@@ -1,0 +1,151 @@
+ /* Importing Google font - Poppins */
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+ }
+
+ .container {
+     width: 80%;
+     margin-top: 30px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: #fff;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     overflow-x: auto;
+ }
+
+ h2 {
+     text-align: center;
+ }
+
+ .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 15px;
+}
+
+.header label {
+    margin-right: 10px;
+}
+
+.header input {
+    padding: 8px;
+    font-size: 14px;
+}
+
+.header button {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header button i {
+    margin-right: 5px;
+}
+
+.header button:hover {
+    background-color: #cc0000 ;
+}
+
+ table {
+     width: 100%;
+     text-align: center;
+     border-collapse: collapse;
+ }
+
+ table th,
+ table td {
+     border: 1px solid;
+     padding: 13px;
+ }
+
+ /* Pagination Styles */
+ .pagination {
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+ }
+
+ .pagination a {
+     color: #333;
+     padding: 5px 10px;
+     margin: 0 5px;
+     border: 1px solid #ddd;
+     text-decoration: none;
+     border-radius: 5px;
+     transition: background-color 0.3s;
+ }
+
+ .pagination a:hover {
+     background-color: #f0f0f0;
+ }
+
+ .pagination a.active {
+     background-color: #007bff;
+     color: white;
+     border: 1px solid #007bff;
+ }
+
+ .pagination a.disabled {
+     pointer-events: none;
+     color: #ccc;
+ }
+
+
+ /* Responsive styling for smaller devices */
+ @media only screen and (max-width: 1200px) {
+     .container {
+         width: 95%;
+         margin-left: auto;
+         margin-right: auto;
+     }
+
+     table {
+         width: 100%;
+         /* Ensure table takes full width */
+     }
+
+     table th,
+     table td {
+         font-size: 14px;
+         padding: 10px;
+     }
+     .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header input, .header button {
+        width: 100%;
+    }
+ }
+
+ @media only screen and (max-width: 400px) {
+     body {
+         min-width: 400px;
+     }
+
+     .container {
+         width: 100%;
+         padding: 10px;
+         margin-left: 50px;
+     }
+
+     table th,
+     table td {
+         font-size: 12px;
+         padding: 8px;
+     }
+ }
